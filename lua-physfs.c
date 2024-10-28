@@ -3,7 +3,7 @@
 #include <lauxlib.h>
 
 #define PHYSFS_STATIC
-#include "physfs/src/physfs.h"
+#include <physfs.h>
 
 #include <stdlib.h>
 #include <string.h>
@@ -32,7 +32,7 @@
 # define LUA_OK                    0
 # define lua_rawlen                lua_objlen
 # define luaL_setfuncs(L,libs,nup) luaL_register(L, NULL, libs)
- 
+
 #ifndef LUA_GCISRUNNING /* not LuaJIT 2.1 */
 
 #define luaL_newlibtable(L,l)      \

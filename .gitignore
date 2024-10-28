@@ -6,3 +6,5 @@
 *.o
 *.a
 tags
+/lua_modules
+/.luarocks
