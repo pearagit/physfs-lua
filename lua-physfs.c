@@ -1,3 +1,10 @@
+/**
+ * lua-physfs.c
+ *
+ * Author: Xavier Wang.
+ */
+
+
 #define LUA_LIB
 #include <lua.h>
 #include <lauxlib.h>
