@@ -1,7 +1,7 @@
 ---@diagnostic disable: lowercase-global
 rockspec_format = "3.0"
 package = "physfs-lua"
-version = "3.2.0-2"
+version = "3.2.0-3"
 source = {
   url = "git+ssh://git@github.com/pearagit/physfs-lua.git",
 }
