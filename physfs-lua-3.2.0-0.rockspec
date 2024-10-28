@@ -7,7 +7,7 @@ source = {
 }
 description = {
   homepage = "https://icculus.org/physfs/",
-  license = "Unlicensed",
+  license = "Lua License",
   summary = "PhysicsFS bindings for Lua",
   detailed = "Lua bindings by Xavier Wang for PhysicsFS, a library to provide abstract access to various archives.",
 }
