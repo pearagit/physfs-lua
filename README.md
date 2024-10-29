@@ -2,7 +2,7 @@
    physfs-lua
 </h1>
 
-`physfs-lua` library for binding `PhysicsFS`, a library to provide abstract access to various archives, to Lua, specifically targeting Lua 5.1 and LuaJIT. This repository hosts an adapted version of Xavier Wang's [`lua-physfs`](https://github.com/starwing/lua-physfs) library, updated link with system installed `PhysicsFS` and any other potential changes required for use with Neovim.
+`physfs-lua` library for binding `PhysicsFS`, a library to provide abstract access to various archives, to Lua, specifically targeting Lua 5.1 and LuaJIT. This repository hosts an adapted version of Xavier Wang's [`lua-physfs`](https://github.com/starwing/lua-physfs) library, updated to link with a system installed `PhysicsFS` library and any other potential changes required for use with Neovim.
 
 The remaining of this document features the original [lua-physfs readme](https://github.com/starwing/lua-physfs/blob/master/README.md) with relevant changes.
 

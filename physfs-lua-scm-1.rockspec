@@ -29,10 +29,10 @@ build = {
       incdirs = { "$(PHYSFS_INCDIR)" },
       libdirs = { "$(PHYSFS_LIBDIR)" },
     },
-    ["physfs-lua"] = "src/physfs-lua.lua",
   },
   copy_directories = {
     "tests",
+    "lua",
   },
 }
 test = {
