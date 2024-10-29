@@ -24,11 +24,16 @@ build = {
   type = "builtin",
   modules = {
     physfs = {
-      sources = "lua-physfs.c",
+      sources = "src/physfs-lua.c",
       libraries = { "physfs" },
       incdirs = { "$(PHYSFS_INCDIR)" },
       libdirs = { "$(PHYSFS_LIBDIR)" },
     },
+    ["physfs.error_codes"] = "src/physfs/error_codes.lua",
+  },
+  copy_directories = {
+    "tests",
+    "library",
   },
 }
 test = {
