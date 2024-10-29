@@ -1,7 +1,7 @@
 ---@diagnostic disable: lowercase-global
 rockspec_format = "3.0"
 package = "physfs-lua"
-version = "3.2.0-3"
+version = "scm-1"
 source = {
   url = "git+ssh://git@github.com/pearagit/physfs-lua.git",
 }
@@ -29,11 +29,10 @@ build = {
       incdirs = { "$(PHYSFS_INCDIR)" },
       libdirs = { "$(PHYSFS_LIBDIR)" },
     },
-    ["physfs.error_codes"] = "src/physfs/error_codes.lua",
+    ["physfs-lua"] = "src/physfs-lua.lua",
   },
   copy_directories = {
     "tests",
-    "library",
   },
 }
 test = {
