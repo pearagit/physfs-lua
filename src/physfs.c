@@ -1,5 +1,5 @@
 /**
- * lphysfs.c
+ * physfs.c
  *
  * Author: Xavier Wang.
  */
@@ -691,7 +691,7 @@ static int Ldeinit(lua_State *L) {
     return 0;
 }
 
-LUALIB_API int luaopen_lphysfs(lua_State *L) {
+LUALIB_API int luaopen_physfs(lua_State *L) {
     luaL_Reg libs[] = {
         { "close", Lfile_close },
 #define ENTRY(name) { #name, L##name }

@@ -13,7 +13,7 @@ description = {
 }
 dependencies = {
   'lua ~> 5.1',
-  'luaunit >= 3.4',
+  'luaunit >= 3.4', -- not strictly necessary but triggers lazy.nvim build
 }
 external_dependencies = {
   PHYSFS = {
@@ -23,8 +23,8 @@ external_dependencies = {
 build = {
   type = 'builtin',
   modules = {
-    lphysfs = {
-      sources = 'src/lphysfs.c',
+    physfs = {
+      sources = 'src/physfs.c',
       libraries = { 'physfs' },
       incdirs = { '$(PHYSFS_INCDIR)' },
       libdirs = { '$(PHYSFS_LIBDIR)' },
