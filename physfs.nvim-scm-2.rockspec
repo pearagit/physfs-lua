@@ -1,7 +1,7 @@
 ---@diagnostic disable: lowercase-global
 rockspec_format = '3.0'
 package = 'physfs.nvim'
-version = 'scm-1'
+version = 'scm-2'
 source = {
   url = 'git+ssh://git@github.com/pearagit/physfs.nvim.git',
 }
