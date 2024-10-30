@@ -80,7 +80,7 @@ function M.setup(opts)
   if physfs == nil then
     error('Failed to load physfs:\n' .. vim.inspect(results))
   end
-  vim.tbl_deep_extend('force', M, physfs)
+  M = vim.tbl_deep_extend('force', M, physfs)
 end
 
 return M
