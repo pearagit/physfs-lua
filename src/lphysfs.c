@@ -1,5 +1,5 @@
 /**
- * lua-physfs.c
+ * lphysfs.c
  *
  * Author: Xavier Wang.
  */
@@ -691,7 +691,7 @@ static int Ldeinit(lua_State *L) {
     return 0;
 }
 
-LUALIB_API int luaopen_physfs(lua_State *L) {
+LUALIB_API int luaopen_lphysfs(lua_State *L) {
     luaL_Reg libs[] = {
         { "close", Lfile_close },
 #define ENTRY(name) { #name, L##name }
@@ -735,9 +735,3 @@ LUALIB_API int luaopen_physfs(lua_State *L) {
     lua_pushstring(L, PHYSFS_getDirSeparator()), lua_setfield(L, -2, "dirSep");
     return 1;
 }
-
-/* win32cc: output="physfs.dll" libs='-llua54 libphysfs.a'
- * win32cc: flags+='-mdll -DLUA_BUILD_AS_DLL'
- * maccc: output="physfs.so" libs='libphysfs.a' flags+='-undefined dynamic_lookup'
- * maccc: flags+='-shared -framework CoreServices -framework IOKit'
- * cc: flags+='-Wextra -O3 -fprofile-arcs -ftest-coverage -pedantic -std=c89' */
